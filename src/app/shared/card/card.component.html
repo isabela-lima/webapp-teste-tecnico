@@ -1,0 +1,16 @@
+<mat-card class="profile-card">
+  <img src="{{ user.avatar }}" alt="" class="avatar" />
+  <mat-card-content>
+    <p>Nome</p>
+    <h3>{{ user.name }}</h3>
+    <p>Idade</p>
+    <h3>{{ user.age }}</h3>
+    <p>Email</p>
+    <h3>{{ user.email }}</h3>
+  </mat-card-content>
+  <mat-card-actions>
+    <a mat-button color="primary" routerLink="/views/profile/{{ user.id }}">
+      Ver Perfil
+    </a>
+  </mat-card-actions>
+</mat-card>

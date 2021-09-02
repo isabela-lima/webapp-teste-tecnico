@@ -1,0 +1,16 @@
+.form-container {
+  padding: 20px 50px;
+  margin: 30px 50px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  display: grid;
+
+  .title {
+    color: #673ab7;
+  }
+}
+
+mat-form-field {
+  margin: 5px 30px;
+  padding: 5px;
+  width: 80%;
+}

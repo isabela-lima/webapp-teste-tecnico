@@ -1,0 +1,25 @@
+.main-container {
+  padding: 50px;
+  margin: 50px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+  .title {
+    color: #673ab7;
+  }
+}
+
+mat-form-field {
+  margin: 5px 30px;
+  padding: 5px;
+  width: 80%;
+}
+
+.button-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  button {
+    margin: 20px 50px;
+  }
+}
