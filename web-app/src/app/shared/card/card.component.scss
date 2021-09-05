@@ -1,14 +1,13 @@
-.profile-card {
+.card {
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-  border-radius: 10px;
-  margin: 20px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+  border: none;
 
   h3 {
     font-weight: 300;
+  }
+
+  @media (max-width: 768px) {
+    width: 18rem;
   }
 }
 
@@ -17,4 +16,18 @@
   width: 150px;
   height: 150px;
   border-radius: 50%;
+}
+
+.btn {
+  background-color: #673ab7;
+  border: none;
+}
+
+.card-span {
+  font-size: 12px;
+  color: #a1aab9;
+}
+
+.card-title {
+  font-weight: 600;
 }

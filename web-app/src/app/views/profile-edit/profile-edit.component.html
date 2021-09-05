@@ -1,5 +1,5 @@
-<div class="form-container">
-  <h2 class="title">Adicionar novo perfil</h2>
+<div class="main-container">
+  <h2 class="title">Editar perfil</h2>
   <div
     class="row justify-content-around row-cols-1 row-cols-sm-2 row-cols-md-4"
   >
@@ -88,7 +88,7 @@
       </select>
 
       <div class="checkbox-group">
-        <div class="form-check">
+        <div class="form-check mt-2">
           <label class="form-check-label" for="status"
             >Marque se você for um perfil inativo</label
           >
@@ -112,7 +112,7 @@
         [(ngModel)]="user.avatar"
       />
 
-      <div class="mb-3">
+      <div class="m-2">
         <label for="description">Descrição do perfil</label>
         <textarea
           name="description"
@@ -155,7 +155,10 @@
     </div>
   </div>
 
-  <div class="button-row m-2">
-    <button class="btn btn-primary" (click)="sendUser()">Enviar</button>
+  <div class="button-row">
+    <button class="btn btn-primary" (click)="update()">Enviar</button>
+    <button class="btn btn-primary" (click)="openDialog()">
+      Deletar Perfil
+    </button>
   </div>
 </div>

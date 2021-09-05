@@ -1,16 +1,21 @@
-<mat-card class="profile-card">
-  <img src="{{ user.avatar }}" alt="" class="avatar" />
-  <mat-card-content>
-    <p>Nome</p>
-    <h3>{{ user.name }}</h3>
-    <p>Idade</p>
-    <h3>{{ user.age }}</h3>
-    <p>Email</p>
-    <h3>{{ user.email }}</h3>
-  </mat-card-content>
-  <mat-card-actions>
-    <a mat-button color="primary" routerLink="/views/profile/{{ user.id }}">
-      Ver Perfil
-    </a>
-  </mat-card-actions>
-</mat-card>
+<div class="col m-4">
+  <div class="card text-center">
+    <div class="col m-4">
+      <img
+        src="{{ user.avatar }}"
+        alt=""
+        width="100"
+        class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm"
+      />
+      <div class="card-body">
+        <h5 class="card-title">{{ user.name }}</h5>
+
+        <p class="card-span">{{ user.department }} - {{ user.groups }}</p>
+      </div>
+
+      <a class="btn btn-primary" routerLink="/views/profile-view/{{ user.id }}"
+        >Abrir perfil</a
+      >
+    </div>
+  </div>
+</div>

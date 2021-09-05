@@ -1,14 +1,12 @@
 header {
+  background-color: #673ab7;
+
   a {
-    color: inherit;
+    color: #fff;
     text-decoration: none;
   }
 
   .ativo {
     display: none;
   }
-}
-
-.example-spacer {
-  flex: 1 1 auto;
 }

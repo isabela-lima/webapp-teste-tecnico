@@ -1,0 +1,43 @@
+.profile-container {
+  margin: 30px 20px;
+  padding: 30px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+  .title {
+    font-weight: 300;
+  }
+
+  .avatar {
+    margin: 10px;
+  }
+
+  .btn {
+    background-color: #673ab7;
+    border: none;
+  }
+
+  .profile-name {
+    font-size: 24px;
+    font-weight: 600;
+  }
+
+  .profile-links-title {
+    color: #767676;
+    font-weight: 600;
+  }
+
+  .profile-links-description {
+    font-weight: 600;
+    color: #673ab7;
+    cursor: pointer;
+  }
+
+  .profile-label {
+    color: #767676;
+    font-weight: 600;
+  }
+
+  .profile-text {
+    font-weight: 500;
+  }
+}

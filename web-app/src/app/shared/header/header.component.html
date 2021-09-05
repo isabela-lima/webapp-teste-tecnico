@@ -1,7 +1,12 @@
 <header>
-  <mat-toolbar color="primary">
-    <a routerLink="">Home</a>
-    <span class="example-spacer"></span>
-    <a routerLink="app-signup" routerLinkActive="ativo">Cadastro</a>
-  </mat-toolbar>
+  <nav class="navbar">
+    <div class="container-fluid">
+      <a class="navbar-brand" routerLink="">
+        <fa-icon [icon]="faUsers"></fa-icon> Perfis</a
+      >
+      <a class="navbar-brand" routerLink="app-signup" routerLinkActive="ativo"
+        >Cadastrar novo usuário</a
+      >
+    </div>
+  </nav>
 </header>

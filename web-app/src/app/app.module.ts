@@ -10,8 +10,10 @@ import { AppRoutingModule } from './app-routing.module';
 import { HomeComponent } from './views/home/home.component';
 import { HeaderComponent } from './shared/header/header.component';
 import { SignupComponent } from './views/signup/signup.component';
-import { ProfileComponent } from './views/profile/profile.component';
+import { ProfileEditComponent } from './views/profile-edit/profile-edit.component';
+import { ProfileViewComponent } from './views/profile-view/profile-view.component';
 import { CardComponent } from './shared/card/card.component';
+import { ConfirmDialogComponent } from './shared/confirm-dialog/confirm-dialog.component';
 
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
@@ -21,6 +23,14 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatSelectModule } from '@angular/material/select';
 import { MatGridListModule } from '@angular/material/grid-list';
+import { MatRadioModule } from '@angular/material/radio';
+import { MatDialogModule } from '@angular/material/dialog';
+import {
+  MatSnackBarModule,
+  MAT_SNACK_BAR_DEFAULT_OPTIONS,
+} from '@angular/material/snack-bar';
+
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
@@ -29,24 +39,35 @@ import { MatGridListModule } from '@angular/material/grid-list';
     HeaderComponent,
     SignupComponent,
     CardComponent,
-    ProfileComponent,
+    ProfileEditComponent,
+    ProfileViewComponent,
+    ConfirmDialogComponent,
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
+    HttpClientModule,
+    FormsModule,
+
+    //Material
     MatToolbarModule,
     MatIconModule,
-    HttpClientModule,
     MatCardModule,
     MatButtonModule,
-    FormsModule,
     MatFormFieldModule,
     MatInputModule,
     MatSelectModule,
     MatGridListModule,
+    MatRadioModule,
+    MatDialogModule,
+    MatSnackBarModule,
+    FontAwesomeModule,
   ],
-  providers: [UserService],
+  providers: [
+    UserService,
+    { provide: MAT_SNACK_BAR_DEFAULT_OPTIONS, useValue: { duration: 2500 } },
+  ],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

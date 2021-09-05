@@ -1,0 +1,89 @@
+<div class="container">
+  <div class="profile-container">
+    <h1 class="title">PERFIL</h1>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="profile-img">
+          <img src="{{ user.avatar }}" alt="" class="avatar rounded-circle" />
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="profile-head">
+          <h5 class="profile-name mt-2">{{ user.name.toUpperCase() }}</h5>
+        </div>
+      </div>
+      <div class="col-md-2">
+        <a
+          class="btn btn-primary btn-small"
+          routerLink="/views/profile-edit/{{ user.id }}"
+          >Editar Perfil</a
+        >
+      </div>
+
+      <div class="row">
+        <div class="col-md-4">
+          <div class="profile-links my-2">
+            <p class="profile-links-title">Redes Sociais</p>
+            <p class="profile-links-description">{{ user.github }}</p>
+            <p class="profile-links-description">{{ user.facebook }}</p>
+            <p class="profile-links-description">{{ user.twitter }}</p>
+            <p class="profile-links-description">{{ user.instagram }}</p>
+            <p class="profile-links-title">Links</p>
+            <p class="profile-links-description">{{ user.files }}</p>
+          </div>
+        </div>
+
+        <div class="col-md-8">
+          <div class="row">
+            <div class="col-md-6">
+              <label for="" class="profile-label">Email</label>
+            </div>
+            <div class="col-md-6">
+              <p class="profile-text">{{ user.email }}</p>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-6">
+              <label for="" class="profile-label">Idade</label>
+            </div>
+            <div class="col-md-6">
+              <p class="profile-text">{{ user.age }}</p>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-6">
+              <label for="" class="profile-label">Departamento</label>
+            </div>
+            <div class="col-md-6">
+              <p class="profile-text">{{ user.department }}</p>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-6">
+              <label for="" class="profile-label">Grupo</label>
+            </div>
+            <div class="col-md-6">
+              <p class="profile-text">{{ user.groups }}</p>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-6">
+              <label for="" class="profile-label">Descrição do Perfil</label>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-6">
+              <p class="profile-text">{{ user.description }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
