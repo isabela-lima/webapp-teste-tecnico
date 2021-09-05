@@ -40,21 +40,21 @@ export class SignupComponent implements OnInit {
   };
 
   departments: Department[] = [
-    { value: 'adminstracao', viewValue: 'Adminstração' },
-    { value: 'financeiro', viewValue: 'Financeiro' },
-    { value: 'direcao', viewValue: 'Direção' },
-    { value: 'operacional', viewValue: 'Operacional' },
-    { value: 'infraestrutura', viewValue: 'Infraestrutura' },
-    { value: 'desenvolvimento', viewValue: 'Desenvolvimento' },
-    { value: 'comercial', viewValue: 'Comercial' },
+    { value: 'Administração', viewValue: 'Administração' },
+    { value: 'Financeiro', viewValue: 'Financeiro' },
+    { value: 'Direção', viewValue: 'Direção' },
+    { value: 'Operacional', viewValue: 'Operacional' },
+    { value: 'Infraestrutura', viewValue: 'Infraestrutura' },
+    { value: 'Desenvolvimento', viewValue: 'Desenvolvimento' },
+    { value: 'Comercial', viewValue: 'Comercial' },
   ];
 
   groups: Groups[] = [
-    { value: 'clt', viewValue: 'CLT' },
-    { value: 'pj', viewValue: 'PJ' },
-    { value: 'freelancer', viewValue: 'Freelancer' },
-    { value: 'parceiro', viewValue: 'Parceiros' },
-    { value: 'outros', viewValue: 'Outros' },
+    { value: 'CLT', viewValue: 'CLT' },
+    { value: 'PJ', viewValue: 'PJ' },
+    { value: 'Freelancer', viewValue: 'Freelancer' },
+    { value: 'Parceiros', viewValue: 'Parceiros' },
+    { value: 'Outros', viewValue: 'Outros' },
   ];
 
   constructor(
